@@ -11,19 +11,6 @@ APP_TOKEN = os.environ["PUSHOVER_APP_TOKEN"]
 
 sent = False
 
-requests.post(
-    "https://api.pushover.net/1/messages.json",
-    data={
-        "token": APP_TOKEN,
-        "user": USER_KEY,
-        "message": "テスト通知成功！",
-        "title": "緋八マナ通知システム",
-        "priority": 2,
-        "retry": 60,
-        "expire": 3600,
-    },
-)
-
 while True:
     try:
         r = requests.get(
