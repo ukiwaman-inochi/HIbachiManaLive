@@ -12,7 +12,7 @@ APP_TOKEN = os.environ["PUSHOVER_APP_TOKEN"]
 sent = False
 
 requests.post(
-    "api.pushover.net/1/messages.json",
+    "https://api.pushover.net/1/messages.json",
     data={
         "token": APP_TOKEN,
         "user": USER_KEY,
