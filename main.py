@@ -5,7 +5,7 @@ import requests
 USER_KEY = os.environ["PUSHOVER_USER_KEY"]
 APP_TOKEN = os.environ["PUSHOVER_APP_TOKEN"]
 
-URL = "www.youtube.com/@HibachiMana/live"
+URL = "https://www.youtube.com/@HibachiMana/live"
 
 confirm = 0
 sent = False
