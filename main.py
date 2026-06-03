@@ -1,4 +1,8 @@
 import os
+
+print("ENV KEYS:")
+print(list(os.environ.keys()))
+
 import time
 import requests
 
@@ -39,3 +43,4 @@ while True:
         print(e)
 
     time.sleep(60)
+
